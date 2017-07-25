@@ -13,7 +13,7 @@ public class AppFrame {
 	private JPanel panel2 = new JPanel();
 
 	private JLabel label1 = new JLabel();
-	private JLabel label2 = new JLabel("The answer: ");
+	private JLabel label2 = new JLabel("Answer: ");
 
 	private JTextField field = new JTextField(10);
 
@@ -24,15 +24,17 @@ public class AppFrame {
 	private PuzzleSolver solver = new PuzzleSolver();
 
 	public void activate() {
-		String text = "Three friends came first, second, and third in a prorgamming competition.\n"
+		String question = "Three friends came first, second, and third in a prorgamming competition.\n"
 				+ "Each of the three has a different first name, likes a different sport,\n"
 				+ "and has a different nationality.\n"
 				+ "Michale likes basketball and did better than the American in the programming\n"
 				+ "competition. Simon, the Israeli, did better than the tennis player. The cricket\n"
 				+ "player came first. The question is: Who is Australian?\n"
 				+ "Source: <i>The Art of Prolog</i> by Ehud Shapiro and Leon Sterling";
-		label1.setText("<html>" + text.replaceAll("\\n", "<br>") + "</html>");
+		label1.setText("<html>" + question.replaceAll("\\n", "<br>") + "</html>");
 		label1.setFont(new Font("Serif", Font.PLAIN, 20));
+		
+		label2.setFont(new Font("Serif", Font.PLAIN, 20));
 
 		frame.getContentPane().add(BorderLayout.NORTH, panel1);
 		frame.getContentPane().add(BorderLayout.CENTER, panel2);
