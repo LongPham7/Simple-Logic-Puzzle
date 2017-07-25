@@ -1,3 +1,5 @@
+% Source: The Art of Prolog by Ehud Shapiro and Leon Sterling
+
 % General structure to solve a logic puzzle
 
 solve_puzzle(puzzle(Clues, Queries), Solution) :-

@@ -2,6 +2,9 @@ import org.jpl7.JPL;
 import org.jpl7.Query;
 import org.jpl7.Term;
 
+/** 
+ * This class is an entry point to the application. 
+ * */
 public class LogicPuzzle {
 	
 	private AppFrame app = new AppFrame();

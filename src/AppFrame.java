@@ -2,6 +2,10 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
+/**
+ * This class serves as a view in the MVC architecture, creating GUI components
+ * for the main frame where the logic puzzle is presented to users. 
+ */
 public class AppFrame {
 
 	private JFrame frame = new JFrame("Logic Puzzle");
@@ -16,7 +20,7 @@ public class AppFrame {
 	private JButton button = new JButton("Solve");
 
 	private GridBagConstraints c = new GridBagConstraints();
-	
+
 	private PuzzleSolver solver = new PuzzleSolver();
 
 	public void activate() {
@@ -25,7 +29,8 @@ public class AppFrame {
 				+ "and has a different nationality.\n"
 				+ "Michale likes basketball and did better than the American in the programming\n"
 				+ "competition. Simon, the Israeli, did better than the tennis player. The cricket\n"
-				+ "player came first. The question is:\n " + "Who is Australian?";
+				+ "player came first. The question is: Who is Australian?\n"
+				+ "Source: <i>The Art of Prolog</i> by Ehud Shapiro and Leon Sterling";
 		label1.setText("<html>" + text.replaceAll("\\n", "<br>") + "</html>");
 		label1.setFont(new Font("Serif", Font.PLAIN, 20));
 
