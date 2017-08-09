@@ -27,7 +27,7 @@ public class AppFrame {
 		String question = "Three friends came first, second, and third in a prorgamming competition.\n"
 				+ "Each of the three has a different first name, likes a different sport,\n"
 				+ "and has a different nationality.\n"
-				+ "Michale likes basketball and did better than the American in the programming\n"
+				+ "Michael likes basketball and did better than the American in the programming\n"
 				+ "competition. Simon, the Israeli, did better than the tennis player. The cricket\n"
 				+ "player came first. The question is: Who is Australian?\n"
 				+ "Source: <i>The Art of Prolog</i> by Ehud Shapiro and Leon Sterling";
